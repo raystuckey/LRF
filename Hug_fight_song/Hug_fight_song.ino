@@ -23,21 +23,6 @@
 
 //
 
-/*
- 
- Tutorial #3 - Blinking and speaking at the same time (with multiple sounds).
- 
- This sketch shows you how to create and run a custom light patterns and sounds
- at the same time. You can also create more complex expressions with multiple 
- sounds!
- 
- Goals:
-	- make a custom pattern
-	- make a custom sound
-	- make a set of custom sounds 
-	- play around with the sounds to try and say 'hi, how ya doing?'
- 
- */
 
 #include "LRF.h"
 
@@ -119,12 +104,6 @@ LRFSound LetterC[55] = {
 { LRFNote_A, LRFOctave_5, LRFIntonation_Flat, LRFDuration_Medium, LRFDuration_None },
 { LRFNote_F, LRFOctave_4, LRFIntonation_Flat, LRFDuration_Medium, LRFDuration_None },
 { LRFNote_AS, LRFOctave_5, LRFIntonation_Flat, LRFDuration_DoubleMedium, LRFDuration_None } //55 notes
-
-
-
-
-
-
 };
 
 
@@ -134,9 +113,6 @@ void setup(void) // Arduino setup routine that gets called ONCE when the robot t
 {
 	lrf.setup(); // lrf library should be set up before anything else
 	delay(1000);
-		
-
-
         lrf.setEventHandler(LRFEvent_Hug, &myHugHandler); // let's connect our event handler to the tap event								// the pattern resets after each sound
 }
 
