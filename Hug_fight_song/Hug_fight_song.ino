@@ -1,5 +1,5 @@
 //
-//  MyLRF03-BlinkAndSay.cpp
+//  Hug_fight_song.cpp
 //  LittleRobotFriends
 //
 //  Created by Mark Argo on 2014-06-11.
